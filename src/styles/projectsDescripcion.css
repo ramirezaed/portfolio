@@ -1,0 +1,67 @@
+.descripContainer {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color:#ebecec;/*rgb(198, 219, 236);*/
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; /*agrega espacio abajo*/
+    border: 1px solid white;
+    
+}
+
+.descripContainer p {
+    display: flex;
+    text-align: justify; 
+    word-break: break-word; /* Rompe las palabras largas para que no se desborden */
+    white-space: normal;    /* justificar el texto */
+    color:rgb(0, 48, 97); 
+}
+
+.descripContainer h2{
+    color:rgb(0, 48, 97); 
+    word-break: break-word; /* Rompe las palabras largas para que no se desborden */
+    white-space: normal;    /* justificar el texto */
+    text-align: center;
+}
+
+.urlproject{
+   text-align: center;
+    font-size: 19px;
+    justify-content: center;
+    color:rgb(0, 48, 97); 
+    font-size: 17.5px;
+}
+
+.urlproject a {
+    text-decoration: none;
+    color:rgb(0, 48, 97); 
+}
+
+.Descripcion-project-button a{
+    color:white;
+}
+
+.Descripcion-project-button:hover{
+    transform: scale(1.1);
+    color: black;
+    background-color: rgb(10, 126, 126);
+}
+
+.Descripcion-project-button a:hover{
+    color: black;
+}
+
+.Descripcion-project-button {
+    padding: 10px;
+    width: 180px;
+    background-color: #00bbc9;/*#6200ea;*/
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+
+}

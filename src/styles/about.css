@@ -1,0 +1,99 @@
+/* Centrado principal */
+.contenedorAbout {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Asegura elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    padding: 10px;
+    
+}
+
+/* Botón estilizado */
+.boton {
+    width: 640px;
+  /*  background-color: #00bbc9;*/
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+
+.boton:hover {
+    /*background-color: #007179;*/
+    background-color: rgb(71, 182, 182);
+}
+
+/* Flecha */
+.flecha {
+    font-size: 50;
+    transition: transform 0.5s ease;
+    margin-left: 400px;
+}
+
+.arriba {
+    transform: rotate(180deg); /* Cambia la dirección de la flecha */
+}
+
+/* Imagen del diploma */
+.titulo {
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.diploma {
+    width: 600px; /* Ajusta según sea necesario */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Animación de despliegue */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.descripcion {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color:#ebecec;/*rgb(198, 219, 236);*/
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+
+.descripcion p{
+    display: flex;
+    text-align: justify; 
+    word-break: break-word; /* Rompe las palabras largas para que no se desborden */
+    white-space: normal;    /* justificar el texto */
+    color:rgb(0, 48, 97); 
+    font-size: 17.5px;
+}
+
+.descripcion h2 {
+    font-family: 'Courier New', monospace;
+    font-weight: normal;
+    white-space: nowrap;
+    color:rgb(0, 22, 145);
+    word-break: break-word; /* Rompe las palabras largas para que no se desborden */
+    white-space: normal;    /* justificar el texto */
+
+}

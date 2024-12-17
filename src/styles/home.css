@@ -1,0 +1,123 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 65px;  /* crea espacio arriba abajo y a los costados del contenedor*/
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;          /* Centra el contenido de texto */
+    padding: 80px;
+  }
+  .FotoPersonal img {
+    margin-bottom: 10px;         /* Espacio entre la imagen y la descripción */
+    margin-right: 45px;
+    
+    
+  }
+  .FotoPersonal {
+    order: 1;  /* La foto se muestra primero */
+    justify-content: center;
+    
+  }
+  .presentacion {
+    order: 2;  /* La descripción aparece después de la foto */
+      justify-content: center;
+  }
+
+  .botonPerfil {
+    order: 3;  /* El botón se coloca al final */
+    margin-top: 20px;  /* Espacio superior para separación */
+  }
+}
+
+
+.presentacion{
+  width: 800px;
+  min-width: 800px;
+}
+
+ .presentacion h1{
+   font-family: 'Courier New', monospace;
+   font-weight: normal;
+   font-size: 48px;
+   white-space: nowrap;
+   margin-left: 5px;
+   /*color:rgb(16, 0, 245);*/
+   color:rgb(247, 230, 230);
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.presentacion h2{
+  color:rgb(247, 230, 230);
+  font-family: 'Courier New', monospace;
+  font-weight: normal;
+  white-space: nowrap;
+  margin-left: 5px;
+
+}
+
+.presentacion p {
+    margin-left: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    color:rgb(247, 230, 230);
+
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .presentacion h1 {
+      font-size: 1.5rem;  /* Reduce el tamaño del título */
+    }
+  
+    .presentacion h2 {
+      font-size: 1.2rem;  /* Reduce el subtítulo */
+    }
+  
+    .presentacion p {
+      font-size: 0.9rem;  /* Reduce el tamaño del párrafo */
+      padding: 0 10px;    /* Añade padding para evitar que el texto toque los bordes */
+    }
+}
+
+.FotoPersonal {
+    display: flex;
+}
+
+
+.FotoPersonal img{
+    margin-left: 20%;
+    border-radius: 10%;
+    width: 100%; 
+    height: 400px;
+    box-shadow: 0 8px 16px rgb(255, 255, 255, 0.3); 
+
+}
+
+.botonCV {
+  background-color:#00a7b3;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.9s ease;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.botonCV:hover{
+  background-color: rgb(10, 126, 126);
+ /* font-size: 20px;*/
+  transform: scale(1.1);
+  color: rgb(241, 241, 252);
+}
