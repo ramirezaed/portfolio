@@ -5,13 +5,14 @@
     padding: 65px;  /* crea espacio arriba abajo y a los costados del contenedor*/
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
   .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;          /* Centra el contenido de texto */
     padding: 80px;
+     max-height: 926px;
   }
   .FotoPersonal img {
     margin-bottom: 10px;         /* Espacio entre la imagen y la descripción */
@@ -32,6 +33,18 @@
   .botonPerfil {
     order: 3;  /* El botón se coloca al final */
     margin-top: 20px;  /* Espacio superior para separación */
+  }
+  .presentacion h1 {
+    font-size: 1.5rem;  /* Reduce el tamaño del título */
+  }
+
+  .presentacion h2 {
+    font-size: 1.2rem;  /* Reduce el subtítulo */
+  }
+
+  .presentacion p {
+    font-size: 0.9rem;  /* Reduce el tamaño del párrafo */
+    padding: 0 10px;    /* Añade padding para evitar que el texto toque los bordes */
   }
 }
 
@@ -58,34 +71,17 @@
   font-weight: normal;
   white-space: nowrap;
   margin-left: 5px;
-
 }
 
-.presentacion p {
-    margin-left: 5px;
-    font-family: 'Courier New', monospace;
-    font-size: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    white-space: nowrap;
-    color:rgb(247, 230, 230);
-
-}
-
-/* Media Query para pantallas pequeñas */
-@media (max-width: 768px) {
-    .presentacion h1 {
-      font-size: 1.5rem;  /* Reduce el tamaño del título */
-    }
+.efecto-escribir {
+  margin-left: 5px;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  color:rgb(247, 230, 230);
   
-    .presentacion h2 {
-      font-size: 1.2rem;  /* Reduce el subtítulo */
-    }
-  
-    .presentacion p {
-      font-size: 0.9rem;  /* Reduce el tamaño del párrafo */
-      padding: 0 10px;    /* Añade padding para evitar que el texto toque los bordes */
-    }
 }
 
 .FotoPersonal {

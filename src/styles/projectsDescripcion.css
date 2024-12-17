@@ -10,13 +10,14 @@
     
 }
 
-.descripContainer p {
+.descriptionHome p {
     display: flex;
     text-align: justify; 
     word-break: break-word; /* Rompe las palabras largas para que no se desborden */
     white-space: normal;    /* justificar el texto */
     color:rgb(0, 48, 97); 
 }
+
 
 .descripContainer h2{
     color:rgb(0, 48, 97); 

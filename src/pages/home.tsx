@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import fotoPersonal from '../assets/fotomia.jpg';
 import '../styles/home.css';
 import cvpdf from '../assets/CV Ramirez Alejandro Daniel.pdf';
@@ -27,7 +27,7 @@ const Home = () => {
     // Función para dividir el texto con saltos de línea
     const renderTextWithLineBreaks = (text: string) => {
         return text.split('\n').map((line, index) => (
-            <div key={index}>{line}</div>
+            <div key={index}>{line}</div>  // Usamos div en lugar de p
         ));
     };
 
@@ -36,9 +36,9 @@ const Home = () => {
             <div className="presentacion">
                 <h1>¡Hey! Soy Ale..</h1>
                 <h2>Analista Programador en Sistemas de Información</h2>
-                <p className="justificado">
+                <div className="efecto-escribir"> {/* Cambié de <p> a <div> */}
                     {renderTextWithLineBreaks(text)} {/* Mostramos el texto con los saltos de línea */}
-                </p>
+                </div>
                 <a href={cvpdf} download="cv_Ramirez_Alejandro">
                     <button className='botonCV'>Descargar CV</button>
                 </a>

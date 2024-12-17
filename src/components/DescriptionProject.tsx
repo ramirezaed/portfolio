@@ -12,12 +12,12 @@ interface descripcionProps {
     return (
         <div className='descripcionProject'>
             <h2 className= 'titleDescrition'> {title}  </h2>
-            <p  className= 'description'>     {description}</p>
-            <p  className= 'urlproject' >  
+            <div  className= 'description'>     {description}</div>
+            <div  className= 'urlproject' >  
                 <button className='Descripcion-project-button'>
                  <a href={urlpro}>Visitar Repositorio</a>
             </button>
-            </p>
+            </div>
             </div>
         )  
  };

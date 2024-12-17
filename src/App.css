@@ -6,4 +6,16 @@ background-size: cover;
 
 }
 
-    
+@media (max-width: 768px) {
+    body {
+        max-width: 768px;
+       
+    }
+}
+
+@media (max-width: 412px) {
+    body {
+        max-width: 412px;
+       
+    }
+}

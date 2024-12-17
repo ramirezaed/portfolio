@@ -1,3 +1,4 @@
+
 .containerProjects {
   display: inline-flex;
   grid-template-columns: repeat(2, 1fr); /* 2 columnas */
@@ -66,4 +67,39 @@
   transform: scale(1.1);
   color: black;
   background-color: rgb(10, 126, 126);
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .containerProjects {
+    grid-template-columns: 1fr; /* Una columna */
+    padding: 10px; /* Menos espaciado */
+  }
+
+  .project-card {
+    width: 100%; /* Las tarjetas ocupan todo el ancho */
+    margin-left: 0; /* Eliminar margen izquierdo */
+    margin-bottom: 20px; /* Añadir espacio entre las tarjetas */
+  }
+
+  .project-button {
+    width: 100%; /* El botón ocupa todo el ancho */
+  }
+}
+
+@media (max-width: 1000px) {
+  .containerProjects {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px; 
+   /* display: inline-flex;*/
+  }
+
+  .project-card {
+    width: 300px; 
+    margin-left: 0; 
+  }
+
+  .project-button {
+    width: 250px; 
+  }
 }
